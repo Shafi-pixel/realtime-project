@@ -50,7 +50,7 @@ Shows:
 
 1. Clone Repository
 
-git clone https://github.com/YOUR_USERNAME/realtime-sales-pipeline.git
+git clone https://github.com/Shafi-pixel/realtime-sales-pipeline.git
 cd realtime-sales-pipeline
 
 2. Install Dependencies
