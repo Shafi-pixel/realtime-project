@@ -4,3 +4,7 @@ kafka-python
 psycopg2-binary
 pydantic
 boto3
+streamlit
+pandas
+requests
+matplotlib
