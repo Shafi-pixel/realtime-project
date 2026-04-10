@@ -1,87 +1,69 @@
-🚀 Real-Time Sales Data Pipeline
+# 🚀 Real-Time Sales Data Pipeline & Dashboard
 
-📌 Overview
-
-This project is a complete end-to-end real-time data pipeline built using modern data engineering tools.
-
-It simulates live sales data ingestion using Kafka, processes it, stores it in PostgreSQL, and visualizes it using a Streamlit dashboard.
+A production-style **real-time data engineering project** that simulates streaming sales data, processes it through Kafka, stores it in PostgreSQL, and visualizes it on a live dashboard.
 
 ---
 
-🏗️ Architecture
+## ⚡ Tech Stack
 
-Kafka → Consumer → PostgreSQL → FastAPI → Streamlit Dashboard
-
----
-
-🛠️ Tech Stack
-
-- Kafka – Real-time data streaming
-- FastAPI – Backend API
-- PostgreSQL – Database
-- Streamlit – Dashboard UI
-- Docker – Containerization
-- AWS EC2 – Deployment
+- **Streaming:** Apache Kafka  
+- **Backend:** FastAPI (Python)  
+- **Database:** PostgreSQL  
+- **Dashboard:** Streamlit  
+- **Containerization:** Docker & Docker Compose  
+- **Cloud:** AWS EC2  
 
 ---
 
-✨ Features
+## 🧠 Architecture
 
-- Real-time data pipeline
-- REST API for data access
-- Interactive dashboard with filters
-- Auto-refresh dashboard
-- Deployed on AWS EC2
+Producer → Kafka → Consumer → PostgreSQL → FastAPI → Streamlit Dashboard
 
 ---
 
-📊 Dashboard Preview
+## 🔥 Key Features
 
-Shows:
-
-- Recent sales data
-- Total revenue
-- Average price
-- Product-wise filtering
+- ⚡ Real-time data ingestion using Kafka
+- 🧩 Microservices architecture (Producer + Consumer + API)
+- 🗄️ Persistent storage with PostgreSQL
+- 📊 Live dashboard with auto-refresh
+- 🐳 Fully containerized using Docker
+- ☁️ Deployed on AWS EC2
 
 ---
 
-⚙️ Setup Instructions
+## 📊 Live Dashboard
 
-1. Clone Repository
+👉 http://13.49.78.44:8501  
 
-git clone https://github.com/Shafi-pixel/realtime-sales-pipeline.git
-cd realtime-sales-pipeline
+---
 
-2. Install Dependencies
+## 🚀 Quick Start (Local Setup)
 
-pip install -r requirements.txt
-
-3. Run Docker Services
-
+```bash
+git clone https://github.com/Shafi-pixel/realtime-project.git
+cd realtime-project
 docker-compose up -d
+Run dashboard:
+Bash
+python dashboard.py
 
-4. Start Backend
+📁 Project Structure
 
-uvicorn api.main:app --host 0.0.0.0 --port 8000
-
-5. Run Dashboard
-
-streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
-
----
-
-🌐 Access
-
-- API: http://<your-ec2-ip>:8000/sales
-- Dashboard: http://<your-ec2-ip>:8501
-
----
-
+realtime-project/
+│
+├── producer.py        # Kafka Producer
+├── consumer.py        # Kafka Consumer
+├── api/               # FastAPI Backend
+├── db/                # Database connection
+├── dashboard.py       # Streamlit UI
+├── docker-compose.yml
+└── README.md
+💡 Learnings
+Built end-to-end data pipeline from scratch
+Hands-on with Kafka streaming
+Docker-based deployment workflow
+Real-time system design basics
 👨‍💻 Author
-
-Shafi (Data Engineering Enthusiast)
-
----
-
-⭐ If you like this project, give it a star!
+Shafi
+Aspiring Data Engineer 🚀
